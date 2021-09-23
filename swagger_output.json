@@ -14,6 +14,14 @@
   "consumes": [],
   "produces": [],
   "paths": {
+    "/": {
+      "get": {
+        "tags": [],
+        "description": "",
+        "parameters": [],
+        "responses": {}
+      }
+    },
     "/teste": {
       "get": {
         "tags": [
