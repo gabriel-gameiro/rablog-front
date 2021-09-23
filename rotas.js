@@ -1,5 +1,9 @@
 module.exports = (app) => {
 
+    app.get('/', (req, res) => {
+        res.sendFile(path.join(__dirname+'/index.html'));
+    });
+
     app.get('/teste', (req, res) => {
         // #swagger.tags = ['Teste']
         // #swagger.description = 'Endpoint para teste do servidor.'
