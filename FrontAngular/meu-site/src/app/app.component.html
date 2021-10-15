@@ -1,0 +1,6 @@
+<app-header></app-header>
+<mat-grid-list cols="3" rowHeight="700px">
+    <mat-grid-tile *ngFor="let cachorro of dataMockada">
+        <app-card-pagina [cachorro]='cachorro'></app-card-pagina>
+    </mat-grid-tile>
+  </mat-grid-list>
