@@ -1,12 +1,13 @@
-import { Component } from '@angular/core';
-import { Cachorro } from './interfaces/cachorro';
+import { Component, OnInit } from '@angular/core';
+import { HeaderComponent } from 'src/app/componentes/header/header.component';
+import { Cachorro } from 'src/app/interfaces/cachorro';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  selector: 'app-home',
+  templateUrl: './home.component.html',
+  styleUrls: ['./home.component.css']
 })
-export class AppComponent {
+export class HomeComponent implements OnInit {
 
   dataMockada: Cachorro[] = [
     {
@@ -147,6 +148,9 @@ export class AppComponent {
     }
   ];
 
-  title = 'meu-site';
-}
+  constructor() { }
 
+  ngOnInit(): void {
+  }
+
+}
