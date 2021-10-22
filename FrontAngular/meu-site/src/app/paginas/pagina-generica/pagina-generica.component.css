@@ -1,3 +1,15 @@
+.carroceu{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+}
+
 img{
-    height: 40vh;
+    width: 99.8vw;
+    height: 50vh;
+    display:inline;
+}
+
+body{
+    background-color: #232323;
 }

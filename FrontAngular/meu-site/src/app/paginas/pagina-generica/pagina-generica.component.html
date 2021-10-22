@@ -1,12 +1,9 @@
-<app-header></app-header>
-<mat-tab-group>
-    <mat-tab label="First"> 
-        <img src="https://img.itdg.com.br/tdg/images/recipes/000/031/593/318825/318825_original.jpg?mode=crop&width=710&height=400" alt=""> 
-    </mat-tab>
-    <mat-tab label="Second"> 
-        <img src="https://img.youtube.com/vi/zZQkRiv7E38/mqdefault.jpg" alt="">  
-    </mat-tab>
-    <mat-tab label="Third"> 
-        <img src="https://img.elo7.com.br/product/zoom/2182194/painel-para-festa-infantil-bananas-de-pijama-festa.jpg" alt="">
-    </mat-tab>
-</mat-tab-group>
+<body>
+    <app-header></app-header>
+    <!-- Carroceu de imagens -->
+    <mat-tab-group headerPosition="below" mat-align-tabs="center" class="carroceu">
+        <mat-tab label="IMG" *ngFor="let imagem of imgsMockadas"> 
+            <app-imagem [imagem]='imagem'></app-imagem>
+        </mat-tab>
+    </mat-tab-group>
+</body>

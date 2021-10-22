@@ -14,6 +14,7 @@ import { CardPaginaComponent } from './componentes/card-pagina/card-pagina.compo
 import { HeaderComponent } from './componentes/header/header.component';
 import { HomeComponent } from './paginas/home/home.component';
 import { PaginaGenericaComponent } from './paginas/pagina-generica/pagina-generica.component';
+import { ImagemComponent } from './componentes/imagem/imagem.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { PaginaGenericaComponent } from './paginas/pagina-generica/pagina-generi
     CardPaginaComponent,
     HeaderComponent,
     HomeComponent,
-    PaginaGenericaComponent
+    PaginaGenericaComponent,
+    ImagemComponent
   ],
   imports: [
     BrowserModule,
