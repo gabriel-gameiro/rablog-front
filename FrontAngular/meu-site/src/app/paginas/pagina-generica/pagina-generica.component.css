@@ -1,15 +1,33 @@
+.corpoPagina {
+    padding-bottom: 100px;
+}
+
 .carroceu{
-    width: 100vw;
+    width: 99.8vw;
     display: flex;
     align-items: center;
 }
 
-img{
-    width: 99.8vw;
-    height: 50vh;
-    display:inline;
+.conteudo {
+    width: auto;
+    height: fit-content;
+
+    margin-top: 10vh;
+    padding-left: 15vw;
+    padding-right: 15vw;
+    padding-bottom: 45vh;
 }
 
-body{
-    background-color: #232323;
+.direita {
+    float: right;
+}
+
+.esquerda {
+    float: left;
+}
+
+.blocoTeste {
+    height: 200px;
+    width: 200px;
+    background-color: green;
 }

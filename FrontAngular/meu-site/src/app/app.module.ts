@@ -15,6 +15,7 @@ import { HeaderComponent } from './componentes/header/header.component';
 import { HomeComponent } from './paginas/home/home.component';
 import { PaginaGenericaComponent } from './paginas/pagina-generica/pagina-generica.component';
 import { ImagemComponent } from './componentes/imagem/imagem.component';
+import { ImagensSecundariasComponent } from './componentes/imagens-secundarias/imagens-secundarias.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { ImagemComponent } from './componentes/imagem/imagem.component';
     HeaderComponent,
     HomeComponent,
     PaginaGenericaComponent,
-    ImagemComponent
+    ImagemComponent,
+    ImagensSecundariasComponent
   ],
   imports: [
     BrowserModule,
