@@ -1,6 +1,6 @@
 FROM angular/ngcontainer:latest 
-WORKDIR /DockerSitePessoal
-COPY package*.json /DockerSitePessoal/
+WORKDIR /usr/app
+COPY package*.json /usr/app/
 RUN npm i
 COPY . .
 EXPOSE 80
