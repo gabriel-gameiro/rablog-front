@@ -1,5 +1,5 @@
 export interface Imagem {
     imagemSrc: string,
-    titulo: string,
-    principal: boolean
+    titulo?: string,
+    principal?: boolean
 }

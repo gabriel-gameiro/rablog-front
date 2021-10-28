@@ -26,8 +26,20 @@
     float: left;
 }
 
+.meio {
+    margin: auto;
+    width: 50vw;
+}
+
 .blocoTeste {
     height: 200px;
     width: 200px;
     background-color: green;
+}
+
+.blocoTexto {
+    max-width: 40vw;
+    font-size: 20px;
+    line-height: 1.6;
+    color: white;
 }

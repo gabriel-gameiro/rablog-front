@@ -1,0 +1,24 @@
+<div class="corpoPagina">
+    <app-header></app-header>
+    
+    <!-- Carroceu de imagens -->
+    <mat-tab-group headerPosition="below" mat-align-tabs="center" class="carroceu">
+        <mat-tab label="IMG" *ngFor="let imagem of imgsMockadas">
+            <app-imagem [imagem]='imagem'></app-imagem>
+        </mat-tab>
+    </mat-tab-group>
+    
+    <div class="conteudo">
+        <div class="{{moldeMobile? 'meio' : 'direita'}}">
+            <app-imagens-secundarias [imagens]="imgsMockadas"></app-imagens-secundarias>
+        </div>
+    
+        <div class="{{moldeMobile? 'meio' : 'esquerda'}}">
+            <div class="blocoTexto">
+                Lorem ipsum dolor sitamet consectetur adipisicing elit. Cum omnis, recusandae illum sunt incidunt amet architecto laborum unde minima, tempore harum quam fugiat tenetur aliquid quia provident a debitis repellat!
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate natus ad numquam, non, quos, esse dolorem expedita mollitia aut sapiente nobis unde doloribus tempora! Veniam hic dolorum magni laboriosam dolor.
+                Illo ab ipsum iusto veniam sed minus. Ullam ex asperiores deleniti voluptatibus sed dignissimos velit iure atque maxime eveniet eius itaque consectetur vitae, minima accusamus aliquid eligendi eum, quod ipsum.
+            </div>
+        </div>
+    </div>
+</div>

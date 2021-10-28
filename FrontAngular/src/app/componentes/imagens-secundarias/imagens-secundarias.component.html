@@ -1,0 +1,12 @@
+<mat-card class="example-card" *ngIf="imagemDaVez">
+    
+    <img mat-card-image src={{imagemDaVez.imagemSrc}} alt="Photo of a Shiba Inu">
+    <div class="acoesCard">
+        <button (click)="subtrair()" mat-raised-button color="accent" routerLink='/paginaGenerica'>
+            <mat-icon>arrow_back_ios</mat-icon>
+        </button>
+        <button (click)="somar()" mat-raised-button color="accent" routerLink='/paginaGenerica'>
+            <mat-icon>arrow_forward_ios</mat-icon>
+        </button>
+    </div>
+</mat-card>

@@ -26,10 +26,13 @@ export class PaginaGenericaComponent implements OnInit {
       principal: true
     }
   ] 
+  moldeMobile: boolean = false;
 
   constructor() { }
 
   ngOnInit(): void {
+    innerWidth = window.innerWidth;
+    this.moldeMobile = innerWidth < 850;
   }
 
 }
