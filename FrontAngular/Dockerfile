@@ -2,6 +2,7 @@ FROM node:latest as angular
 WORKDIR /app
 COPY package.json /app
 RUN npm i --silent
+RUN npm i -g @angular/cli
 COPY . .
 RUN npm run build
 
