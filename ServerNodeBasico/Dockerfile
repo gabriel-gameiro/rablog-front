@@ -1,9 +1,9 @@
 FROM node:latest 
 
-WORKDIR /DockerNodePessoal
+WORKDIR /usr/app
 
-COPY package*.json /DockerNodePessoal/
+COPY package*.json /usr/app/
 RUN npm i
 COPY . .
 EXPOSE 80
-CMD [ 'npm', 'start-docker' ]
+CMD [ 'node', 'index.js' ]
