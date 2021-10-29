@@ -4,7 +4,7 @@ COPY package.json /app
 RUN npm i --silent
 RUN npm i -g @angular/cli
 COPY . .
-RUN npm run build
+RUN node --max_old_space_size=8192 ./node_modules/@angular/cli/bin/ng build
 
 FROM nginx:alpine
 VOLUME /var/cache/nginx
