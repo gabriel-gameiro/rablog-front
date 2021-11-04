@@ -1,10 +1,10 @@
 FROM node:latest as nodeimg
 
-RUN mkdir -p /usr/src/app
+WORKDIR /usr/src/app
 
-COPY . /usr/src/app
+COPY . .
 
-RUN npm i --prefix /usr/src/app
+RUN npm i
 
 EXPOSE 80
-CMD [ "node", "/usr/src/app/index.js" ]
+CMD [ "node", "index.js" ]
