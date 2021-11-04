@@ -7,4 +7,4 @@ COPY . /usr/src/app
 RUN npm i --prefix /usr/src/app
 
 EXPOSE 80
-CMD [ 'node', '/usr/src/app/index.js' ]
+CMD [ "node", "/usr/src/app/index.js" ]
