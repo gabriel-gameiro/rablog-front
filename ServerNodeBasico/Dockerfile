@@ -1,9 +1,8 @@
-FROM node:latest 
+FROM node:latest as nodeimg
 
-WORKDIR /usr/app
+RUN mkdir -p /usr/src/app
 
-COPY package*.json /usr/app/
-RUN npm i
-COPY . .
+COPY index.js /usr/src/app
+
 EXPOSE 80
-CMD [ 'node', 'index.js' ]
+CMD [ 'node', '/usr/src/app/index.js' ]
