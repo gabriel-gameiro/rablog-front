@@ -2,7 +2,7 @@ FROM node:latest as nodeimg
 
 RUN mkdir -p /usr/src/app
 
-COPY index.js /usr/src/app
+COPY . /usr/src/app
 
 RUN npm i --prefix /usr/src/app
 
